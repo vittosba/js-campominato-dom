@@ -1,0 +1,71 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+header .left img {
+    height: 3rem;
+    margin-right: 10px;
+}
+
+.wrap-grid {
+    flex-grow: 1;
+    background: #7FFFD4;
+}
+
+.wrap-grid h2 {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin: 60px auto;
+}
+
+.grid.end-game .square {
+    pointer-events: none;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.square.safe {
+    background: #6495ED;
+}
+
+.square.bomb {
+    background: #DC143D;
+}
+
+footer {
+    padding: 1rem;
+}
